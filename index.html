@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cuestionario Práctico - RAMDOM TEST</title>
+
+  <!-- ✅ ENLACE CORRECTO AL CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado oficial (Estilo A - limpio y profesional) -->
+  <header>
+    <div class="header-top">
+      <div class="line3">EXAMEN PRACTICO AREQUIPA 19</div>
+      
+      </h1>
+    </div>
+  
+  </header>
+
+  <main>
+    <section id="formulario" class="container">
+      <div class="card">
+        <div class="user-section">
+          <label for="nombre">Apellidos y Nombres:</label>
+<input id="nombre" type="text" placeholder="APELLIDOS, NOMBRES" oninput="this.value = this.value.toUpperCase();" />
+
+<label for="dni">DNI:</label>
+<input id="dni" type="text" placeholder="12345678" maxlength="8" pattern="[0-9]{8}" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,8);" />
+
+        </div>
+
+        <form id="cuestionario" autocomplete="off">
+          <h2>Preguntas (40)</h2>
+          <div id="questions-list"></div>
+
+          <div class="actions">
+            <button type="button" id="guardar">Guardar</button>
+            <button type="button" id="verPuntuacion">Ver Puntuación</button>
+            <!--<button type="button" id="reiniciar">Reiniciar (nuevas 20 preguntas)</button> -->
+          </div>
+        </form>
+
+        <div id="resultado" class="resultado" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="signature">powered by decibelius</
+
+  <!-- ✅ ENLACE CORRECTO AL JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
