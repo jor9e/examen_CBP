@@ -2,8 +2,8 @@
 :root{
   --rojo:#8b0000;
   --rojo-2:#b22222;
-  --bg:#f6f6f7;
-  --card:#ffffff;
+  --bg:#808080;
+  --card:#c0c0c0;
   --muted:#6b7280;
 }
 *{box-sizing:border-box}
@@ -15,7 +15,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 header{ background:linear-gradient(180deg,var(--rojo),var(--rojo-2)); color:white; padding:18px 10px; text-align:center;}
-.header-top{line-height:1.05; font-size:13px;}
+.header-top{line-height:1.05; font-size:15px;}
 .header-top .line1,.header-top .line2,.header-top .line3{ font-weight:800; }
 .header-top .line4{ font-weight:400; font-size:11px; margin-top:6px; }
 hr{ border:0; height:1px; background:rgba(255,255,255,0.18); margin:12px auto; width:90%;}
